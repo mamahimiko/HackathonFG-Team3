@@ -1,7 +1,7 @@
 
 const Header = () => {
     return(
-        <header>Home page</header>
+        <header className="bg-black text-[#F0E6ff] p-4 text-2xl">GEMU</header>
 
     )
 }

@@ -28,15 +28,15 @@
 }
 
 .section-heading {
-  @apply font-exo text-4xl;
+  @apply font-exo text-4xl font-semibold;
 }
 
 .subheading {
-  @apply font-exo text-2xl;
+  @apply font-exo text-2xl font-semibold;
 }
 
 .menu {
-  @apply font-exo text-xl;
+  @apply font-exo text-xl font-semibold;
 }
 
 .body-text {
@@ -44,7 +44,7 @@
 }
 
 .body-state-label {
-  @apply font-exo text-sm;
+  @apply font-exo text-sm font-medium;
 }
 
 .text-small {
