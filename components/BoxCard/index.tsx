@@ -41,11 +41,13 @@ const BoxCard = ({ title, text, icon, link }: BoxCardProps) => {
       </div>
       <h3 className="subheading text-text-primary">{title}</h3>
       <p className="body-text text-text-secondary">{text}</p>
-      {link.length && (
+      {link.length ? (
         <div className="flex gap-4 items-center cursor-pointer text-primary hover:text-primary/60">
           <p className="menu">{link}</p>
           <MoveRight className="" />
         </div>
+      ) : (
+        ""
       )}
     </div>
   );

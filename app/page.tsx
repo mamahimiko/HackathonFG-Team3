@@ -1,3 +1,4 @@
+import CreatorSection from "@/components/CreatorSection";
 import IntroduceSection from "@/components/IntroduceSection";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <div>
       <main className="">
         <IntroduceSection />
+        <CreatorSection />
       </main>
     </div>
   );
