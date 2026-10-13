@@ -7,19 +7,19 @@ export const cardSection = [
     id: 1,
     title: "Flexible voxel system",
     text: "Build beautifully detailed worlds with a powerful, versatile voxel engine.",
-    icon: "Box",
+    icon: "UsersRound",
   },
   {
     id: 2,
     title: "Modern toolset",
     text: "Go from concept to playable with intuitive editing tools and real-time feedback.",
-    icon: "SlidersHorizontal",
+    icon: "FlaskConical",
   },
   {
     id: 3,
     title: "High performance",
     text: "Bring ambitious worlds to life with smooth rendering and responsive gameplay.",
-    icon: "Zap",
+    icon: "Star",
   },
 ] satisfies {
   id: number;
