@@ -8,6 +8,7 @@ import {
   Star,
   BookOpen,
   FileText,
+  MoveRight,
 } from "lucide-react";
 
 const icons = {
@@ -27,10 +28,11 @@ export type IconName = keyof typeof icons;
 type BoxCardProps = {
   title: string;
   text: string;
-  icon: IconName
+  icon: IconName;
+  link: string;
 };
 
-const BoxCard = ({ title, text, icon }: BoxCardProps) => {
+const BoxCard = ({ title, text, icon, link }: BoxCardProps) => {
   const Icon = icons[icon];
   return (
     <div className="flex flex-col gap-4 w-100 h-50 bg-black rounded-2xl p-6">
@@ -39,6 +41,12 @@ const BoxCard = ({ title, text, icon }: BoxCardProps) => {
       </div>
       <h3 className="subheading text-text-primary">{title}</h3>
       <p className="body-text text-text-secondary">{text}</p>
+      {link.length && (
+        <div className="flex gap-4 items-center cursor-pointer text-primary hover:text-primary/60">
+          <p className="menu">{link}</p>
+          <MoveRight className="" />
+        </div>
+      )}
     </div>
   );
 };

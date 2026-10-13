@@ -52,6 +52,7 @@ const IntroduceSection = () => {
             title={card.title}
             text={card.text}
             icon={card.icon}
+            link={""}
           />
         ))}
       </div>

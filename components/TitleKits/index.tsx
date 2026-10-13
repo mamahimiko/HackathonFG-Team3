@@ -17,7 +17,7 @@ const TitleKits = ({ label, title, text, link, ctaButton }: TitleKitsProps) => {
       {link.length && (
         <div className="flex gap-4 items-center cursor-pointer text-primary hover:text-primary/60">
           <p className="menu">{link}</p>
-          <MoveRight className="" />
+          <MoveRight />
         </div>
       )}
       {ctaButton.length && <p>add button!</p>}
