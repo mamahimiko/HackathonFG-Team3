@@ -3,7 +3,7 @@ import TitleKits from "../TitleKits"
 
 const ToolsSection = () => {
     return (
-        <div className="bg-bg-black w-full">
+        <div className="bg-bg-surface w-full">
             <div className="p-20 max-w-360 mx-auto">
                     <div className="flex justify-between">
                     <TitleKits
