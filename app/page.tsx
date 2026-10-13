@@ -1,8 +1,7 @@
-
 export default function Home() {
   return (
     <div>
-      <main>welcome to GEMU Home page</main>
+      <main className="">welcome to GEMU Home page</main>
     </div>
   );
 }

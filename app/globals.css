@@ -3,3 +3,45 @@
 * {
   box-sizing: border-box;
 }
+
+@theme {
+  --color-primary: #9a5bff;
+  --color-secondary: #d946ef;
+  --color-accent: #5b7cff;
+  --color-bg-black: #0a0618;
+  --color-bg-surface: #1a1333;
+
+  --color-text-primary: #f0e6ff;
+  --color-text-secondary: #b3a7d9;
+
+  --font-inter: "Inter", san-serif;
+  --font-exo: "Exo", san-serif;
+}
+
+.main-title {
+  @apply font-exo text-[4rem];
+}
+
+.section-heading {
+  @apply font-exo text-4xl;
+}
+
+.subheading {
+  @apply font-exo text-2xl;
+}
+
+.menu {
+  @apply font-exo text-xl;
+}
+
+.body-text {
+  @apply font-inter text-base;
+}
+
+.body-state-label {
+  @apply font-exo text-sm;
+}
+
+.text-small {
+  @apply font-inter text-xs;
+}
