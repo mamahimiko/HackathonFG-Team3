@@ -43,7 +43,6 @@ const IntroduceSection = () => {
           "The GEMU Engine brings powerful tools, performance and flexibility together — without unnecessary complexity."
         }
         link={"Explore all features"}
-        ctaButton={""}
       />
       <div className="grid lg:grid-cols-2 gap-4 h-[70%] ">
         {cardSection.map((card) => (
