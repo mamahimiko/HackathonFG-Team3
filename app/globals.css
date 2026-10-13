@@ -10,16 +10,21 @@
   --color-accent: #5b7cff;
   --color-bg-black: #0a0618;
   --color-bg-surface: #1a1333;
+  --color-bg-icon: #D946EF;
+  --color-bg-black: #1E1C29;
+
+  --color-border-line: #393545;
 
   --color-text-primary: #f0e6ff;
   --color-text-secondary: #b3a7d9;
+  --color-text-purple: #B3A7D9;
 
   --font-inter: "Inter", san-serif;
   --font-exo: "Exo", san-serif;
 }
 
 .main-title {
-  @apply font-exo text-[4rem];
+  @apply font-exo text-[4rem] font-bold;
 }
 
 .section-heading {
@@ -43,5 +48,5 @@
 }
 
 .text-small {
-  @apply font-inter text-xs;
+  @apply font-inter text-xs font-medium;
 }

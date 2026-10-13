@@ -1,7 +1,11 @@
+import HeroSection from "@/components/Hero-section";
+
 export default function Home() {
   return (
     <div>
-      <main className="">welcome to GEMU Home page</main>
+      <main className="">
+        <HeroSection />
+      </main>
     </div>
   );
 }
