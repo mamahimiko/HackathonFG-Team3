@@ -3,15 +3,14 @@ import TitleKits from "../TitleKits"
 
 const ToolsSection = () => {
     return (
-        <div className="bg-bg-black">
-            <div className="p-20">
-                <div className="flex justify-between">
+        <div className="bg-bg-black w-full">
+            <div className="p-20 max-w-360 mx-auto">
+                    <div className="flex justify-between">
                     <TitleKits
                     label={"THE ENGINE, IN ACTION"}
                     title={"Tools for limitless worlds."}
                     className="max-w-none xl:h-auto pb-10"
                     />
-                    <p className="body-text pt-6 text-text-secondary">Less friction between your imagination and<br /> your next playable world.</p>
                 </div>
                 <div className="flex justify-between">
                     <img src="/tools.png" alt="Tools img"  className="w-185 h-auto"/>
