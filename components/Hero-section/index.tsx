@@ -2,7 +2,7 @@ import { Play,Zap,Users,Cloud } from "lucide-react"
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full h-screen bg-[url('/hero-bg.png')] bg-size-[100%_auto] overflow-hidden bg-no-repeat bg-accent">
+        <section className="relative w-full bg-[url('/hero-bg.png')] bg-size-[100%_auto] overflow-hidden bg-no-repeat bg-accent">
             <div className="absolute inset-0 bg-linear-to-r from-bg-surface via-bg-surface/60 to-transparent pointer-events-none" />
             <div className="absolute inset-0 bg-linear-to-t from-bg-surface/90 via-bg-surface/40 to-transparent pointer-events-none" />
             <div className="relative z-10 px-20">
