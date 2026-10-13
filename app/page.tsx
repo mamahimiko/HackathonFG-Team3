@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       <main className="">
-        <ToolsSection />
         <IntroduceSection />
+        <ToolsSection />
         <CreatorSection />
       </main>
     </div>
