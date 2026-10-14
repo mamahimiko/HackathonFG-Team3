@@ -2,7 +2,6 @@
 
 import { Clock, Users, Mail, MoveRight } from "lucide-react"
 import TitleKits from "../TitleKits"
-// import CTAButton from "../Header/cta-Button"
 import { useState } from "react";
 import ConfirmationCard from "../ConfirmationCard";
 
@@ -17,33 +16,32 @@ const RequestAccess = ({isOpen,onClose} : RequestAccessProps) => {
     if(!isOpen) return null;
 
     if (isSubmitted) {
-  return (
-    <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/60 backdrop-blur-md p-6 pt-20 select-none">
-      <ConfirmationCard
-        onButtonClick={() => {
-          setIsSubmitted(false);
-          onClose?.();
-        }}
-      />
-    </div>
-  );
+    return (
+        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/60 backdrop-blur-md p-6 pt-20 select-none">
+            <ConfirmationCard
+                onButtonClick={() => {
+                setIsSubmitted(false);
+                onClose?.();
+                }}
+            />
+        </div>
+    );
 }
 
     return (
         <>
-        {/* 💡 Pop 확대 애니메이션 */}
-      <style>{`
-        @keyframes modalPop {
-          0% {
-            opacity: 0;
-            transform: scale(0.95) translateY(10px);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-          }
-        }
-      `}</style>
+        <style>{`
+            @keyframes modalPop {
+                0% {
+                    opacity: 0;
+                    transform: scale(0.95) translateY(10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: scale(1) translateY(0);
+                }
+            }
+        `}</style>
         <div onDoubleClick={onClose} className="fixed inset-0 z-40 flex items-center justify-center bg-black/60 backdrop-blur-md p-6 pt-20 select-none">
             <div className="p-20 flex flex-row gap-20 w-fit mx-auto max-w-[1440px]">
                 <div className=" flex flex-col gap-6">
@@ -136,12 +134,12 @@ const RequestAccess = ({isOpen,onClose} : RequestAccessProps) => {
                         </div>
                     </div>
                     <button
-  type="button"
-  onClick={() => setIsSubmitted(true)}
-  className="rounded-2xl bg-accent px-6 py-3 text-text-primary hover:opacity-90"
->
-  Submit application
-</button>
+                        type="button"
+                        onClick={() => setIsSubmitted(true)}
+                        className="rounded-2xl bg-accent px-6 py-3 text-text-primary hover:opacity-90"
+                    >
+                        Submit application
+                    </button>
                 </div>
             </div>
         </div>
