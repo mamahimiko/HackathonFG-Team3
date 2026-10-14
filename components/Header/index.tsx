@@ -8,8 +8,8 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return(
         <>
-            <header className="z-50 flex justify-between font-exo bg-(--color-bg-black) px-3 py-2 text-(--color-text-primary) sticky top-0 z-50">
-                <div className="text-2xl font-bold">GEMU</div>
+            <header className=" w-full z-50 flex justify-between section-heading px-20 py-[31.5px] text-(--color-text-primary) sticky top-0 items-center">
+                <div className="text-[27px] font-bold">GEMU</div>
                 <Navigation />
                 <CTAButton onClick={()=> setIsOpen((prev) => !prev)} />
             </header>
