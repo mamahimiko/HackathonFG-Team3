@@ -35,8 +35,9 @@ export const cardSection = [
 
 const IntroduceSection = () => {
   return (
-    <div className="bg-bg-surface py-22 px-20 flex flex-col xl:flex-row gap-16">
-      <TitleKits
+    <div className="bg-bg-surface ">
+      <div className="w-[1440px] mx-auto py-22 px-20 flex flex-col xl:flex-row gap-16">
+        <TitleKits
         label={"WHY GEMU?"}
         title={"Everything you need to build your world."}
         text={
@@ -54,6 +55,7 @@ const IntroduceSection = () => {
             link={""}
           />
         ))}
+      </div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import logo from "@/public/logotype_GemuEngine_horizontal_white.png";
 
 const Footer = () => {
   return (
-    <footer className=" bg-bg-black px-8 md:px-20 py-10">
+    <footer className=" bg-bg-dark px-8 md:px-20 py-10">
       <div className="flex flex-col md:flex-row justify-between gap-3">
         <div>
           <Image src={logo} alt="Logo" className="w-30" />
