@@ -2,7 +2,7 @@ const API = "https://discord.com/api/v10";
 const headers = { Authorization: `Bot ${process.env.DISCORD_BOT_TOKEN}` };
 
 type Thread = {
-    applied_tags: never[];
+  applied_tags: never[];
   id: string;
   name: string;
   parent_id: string;

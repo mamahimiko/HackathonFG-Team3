@@ -8,7 +8,7 @@ const Navigation = () => {
     },
     {
       name: "Learn",
-      href: "/learn",
+      href: "#",
     },
     {
       name: "Community",
@@ -16,8 +16,12 @@ const Navigation = () => {
     },
     {
       name: "Publish",
-      href: "/publish",
+      href: "#",
     },
+    {
+        name: "Store",
+        href: "#"
+    }
   ];
 
   return (
