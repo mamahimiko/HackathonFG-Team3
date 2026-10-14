@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Exo_2 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import RequestAccess from "@/components/Request-access";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
+        <RequestAccess />
         {children}
       </body>
     </html>
