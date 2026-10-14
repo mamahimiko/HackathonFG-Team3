@@ -18,6 +18,10 @@ const Navigation = () => {
       name: "Publish",
       href: "#",
     },
+    {
+        name: "Store",
+        href: "https://gemu-forums.vercel.app/assets"
+    }
   ];
 
   return (

@@ -28,7 +28,7 @@ const FaqPage = async ({
   return (
     <>
       <Header />
-      <div className="bg-bg-surface w-full">
+      <div className="bg-bg-surface w-full flex-1">
         <div className="p-4 md:p-20 max-w-360 mx-auto">
           <div className="flex flex-col md:flex-row gap-10">
             <div className="">
