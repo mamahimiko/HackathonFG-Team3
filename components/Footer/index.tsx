@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "@/public/logotype_GemuEngine_horizontal_white.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
           <ul className="flex flex-col md:flex-row md:gap-5 menu text-text-secondary cursor-pointer">
             <li className="hover:text-text-secondary/80 ">Engine</li>
             <li className="hover:text-text-secondary/80">Learn</li>
-            <li className="hover:text-text-secondary/80">Community</li>
+            <li className="hover:text-text-secondary/80"><Link href="/community/faq">Community</Link></li>
             <li className="hover:text-text-secondary/80">Contact</li>
           </ul>
         </div>
