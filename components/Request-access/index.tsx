@@ -1,9 +1,18 @@
-import { Clock, Users, Mail, MoveRight } from "lucide-react"
+import { Clock, Users, Mail, MoveRight, X } from "lucide-react"
 import TitleKits from "../TitleKits"
+import CTAButton from "../Header/cta-Button"
 
-const RequestAccess = () => {
+type RequestAccessProps = {
+    isOpen: boolean;
+    onClose?: () => void;
+};
+
+const RequestAccess = ({isOpen,onClose} : RequestAccessProps) => {
+
+    if(!isOpen) return null;
+
     return (
-        <div className="bg-[#201A35] w-full">
+        <div onDoubleClick={onClose} className="fixed top-14 inset-x-0 bottom-0 z-40 bg-[#201A35] w-full">
             <div className="p-20 flex flex-row gap-20 w-fit mx-auto max-w-[1440px]">
                 <div className=" flex flex-col gap-6">
                     <TitleKits 
@@ -66,7 +75,7 @@ const RequestAccess = () => {
                         </div>
                     </div>
                     <span className="flex my-7  border-b border-text-purple"></span>
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-5 pb-7">
                         <div className="flex gap-1.5 items-center leading-none">
                             <span className="text-primary body-state-label">01</span>
                             <p className=" subheading">About you</p>
@@ -94,6 +103,7 @@ const RequestAccess = () => {
                         </div>
                         </div>
                     </div>
+                    <CTAButton />
                 </div>
             </div>
         </div>
