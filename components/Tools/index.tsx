@@ -3,7 +3,7 @@ import TitleKits from "../TitleKits"
 
 const ToolsSection = () => {
     return (
-        <div className="bg-bg-surface w-full">
+        <div className="bg-bg-dark w-full">
             <div className="p-20 max-w-360 mx-auto">
                     <div className="flex justify-between">
                     <TitleKits
@@ -23,7 +23,7 @@ const ToolsSection = () => {
                             <p className="flex gap-3"><CircleCheck className="text-primary w-4.5" />Multiplayer support</p>
                             <p className="flex gap-3"><CircleCheck className="text-primary w-4.5" />Easy integration with Steam</p>
                         </div>
-                        <div className="border border-[#2D2050] w-fit py-[13px] px-[22px] menu items-center leading-none">
+                        <div className="border border-[#2D2050] w-fit py-[13px] px-[22px] menu items-center leading-none ">
                             <p className=" flex text-primary gap-3">Explore GEMU Engine<ArrowRight className="w-[17px]" /> </p>
                         </div>
                     </div>
