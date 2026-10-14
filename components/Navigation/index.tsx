@@ -6,7 +6,7 @@ const Navigation = () => {
 
     const menuItem = [
         {
-            name:'Engin',
+            name:'Engine',
             href: '/'
         },
         {
