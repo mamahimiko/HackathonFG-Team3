@@ -1,6 +1,10 @@
-import { Clock, Users, Mail, MoveRight, X } from "lucide-react"
+'use client'
+
+import { Clock, Users, Mail, MoveRight } from "lucide-react"
 import TitleKits from "../TitleKits"
-import CTAButton from "../Header/cta-Button"
+// import CTAButton from "../Header/cta-Button"
+import { useState } from "react";
+import ConfirmationCard from "../ConfirmationCard";
 
 type RequestAccessProps = {
     isOpen: boolean;
@@ -8,11 +12,25 @@ type RequestAccessProps = {
 };
 
 const RequestAccess = ({isOpen,onClose} : RequestAccessProps) => {
+    const [isSubmitted, setIsSubmitted] = useState(false)
 
     if(!isOpen) return null;
 
+    if (isSubmitted) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/70 p-4">
+      <ConfirmationCard
+        onButtonClick={() => {
+          setIsSubmitted(false);
+          onClose?.();
+        }}
+      />
+    </div>
+  );
+}
+
     return (
-        <div onDoubleClick={onClose} className="fixed top-14 inset-x-0 bottom-0 z-40 bg-[#201A35] w-full">
+        <div onDoubleClick={onClose} className="fixed top-14 inset-x-0 bottom-0 z-40 bg-[#201A35] w-full overflow-y-auto">
             <div className="p-20 flex flex-row gap-20 w-fit mx-auto max-w-[1440px]">
                 <div className=" flex flex-col gap-6">
                     <TitleKits 
@@ -103,7 +121,13 @@ const RequestAccess = ({isOpen,onClose} : RequestAccessProps) => {
                         </div>
                         </div>
                     </div>
-                    <CTAButton />
+                    <button
+  type="button"
+  onClick={() => setIsSubmitted(true)}
+  className="rounded-2xl bg-accent px-6 py-3 text-text-primary hover:opacity-90"
+>
+  Submit application
+</button>
                 </div>
             </div>
         </div>
