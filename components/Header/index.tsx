@@ -1,12 +1,14 @@
 import Navigation from "../Navigation"
+import CTAButton from "./cta-Button"
 
 const Header = () => {
     return(
-        <header className="bg-black text-[#F0E6ff] p-4 text-4xl flex justify-between">
-            <div className="text-left">
+        <header className="flex justify-between bg-(--color-bg-black) px-3 py-2 text-(--color-text-primary) sticky top-0 z-50">
+            <div className="text-2xl font-bold">
             GEMU
             </div>
             <Navigation />
+            <CTAButton />
         </header>
 
     )
